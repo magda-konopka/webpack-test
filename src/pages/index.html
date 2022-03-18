@@ -1,153 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta
-      property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    />
+    <title>Document</title>
+    <link href="../css/styleMK.css" rel="stylesheet" type="text/css" />
+   
 
-    <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="pwa/apple-icon-180.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="167x167"
-      href="pwa/apple-icon-167.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="pwa/apple-icon-152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="pwa/apple-icon-120.png"
-    />
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-2732.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2732-2048.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2388.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2388-1668.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2224.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2224-1668.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1536-2048.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-1536.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2688.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2688-1242.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1125-2436.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2436-1125.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-828-1792.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1792-828.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2208.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2208-1242.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-750-1334.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1334-750.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-640-1136.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1136-640.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
   </head>
+
   <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+    <header class="header">
+      <nav class="navigation navigation--js ">
+        <a
+          class="navigation__link navigation__link--homepage"
+          href="nauka-html.html"
+        >
+          Nauka html
+        </a>
+        <a class="navigation__link" href="indexMK.html"> Strona główna </a>
+        <a class="navigation__link" href="missdietetik.html"> MissdietetiK</a>
+      </nav>
+      <button class="hamburger hamburger--js" aria-label="Otwórz menu.">
+        MENU
+      </button>
+    </header>
+    <main class="main">
+       
+        <h1>Magda Konopka-strona domowa.</h1>
+      
+
+      <section>
+        <h2 class="hotpink-header hotpink-header--js">Coś o mnie?</h2>
+        <p class="test"> Witam Cię <span class="test__special">serdecznie</span>! </p>
+
+        <img class="img" src="../assets/img/magda.jpg" alt="Madzia" />
+
+        <article class="week__summary">
+          <p>
+            Cześć! Nazywam się Magda, chociaaż wszyscy do mnie mówią Madzia. Na
+            co dzień pomagam ludziom, gdyż pracuje w aptece jako technik
+            farmacji. <br />
+            Jest to moje pierwsze wykształcenie, gdyż również posiadam tytuł
+            dietetyka, który otrzymałam dwa lata temu kończąc studia pierwszego
+            stopnia. <a href="#zmiany">Przejdź do zmiany. </a>
+          </p>
+        </article>
+      </section>
+
+      <div class="grid">
+        <section>
+          <h2 class="hotpink-header">Skąd zainteresowanie programowaniem?</h2>
+          <article class="week__summary">
+            <p>
+              Programowaniem zaraził mnie mój chłopak Paweł, który na co dzień
+              pracuje jako programista. To on pokazał mi na czym to polega i
+              uświadczył w przekonaniu , że programistą może stać się każdy, kto
+              chociaż trochę ma samozaparcia w sobie, a systematyczna nauka nie
+              jest mu straszna. Dlatego też zaczełam brać udział w szkoleniu:
+              <a href="https://cotenfrontend.pl/"> WTF.</a>
+            </p>
+          </article>
+        </section>
+
+        <section>
+          <h2 class="black">Czas na zmiany?</h2>
+
+          <article class="week__summary">
+            <p>
+              Nowy rok to dobry czas na postanowienia. Chociaż nigdy żadnych nie
+              miałam, w tym roku postanowiłam zmienić zawód. Nie, że nie lubię
+              swojej obecnej pracy, nic z tych rzeczy. Praca w aptece
+              siedmiodniowej, od rana do wieczora zaczyna mnie męczy. Kiedy
+              przychodzi weekend, rodzina i znajomi spędzają ze sobą czas, ja
+              jestem nieobecna , bo musze być w aptece. Kwestia finansowa, to
+              kolejny element nakłaniający do zmiany zawodu, no i oczywiście
+              pacjenci, którzy są bardzo roszczeniowi, nie liczą się z Tobą, nie
+              szanują Cię i poniżają, bo ty marny aptekarzyno jesteś zły,
+              wszystkiemu winien, bo wykonujesz swoją pracę i przestrzegasz
+              prawo, które Cię obowiązuje Ale mam w sobie wole walki i
+              samozaparcie (schudłam ok. 20 kg), dlatego będę dążyć do tego by
+              stać się programistką. Myślę, że uda mi się to osiągnąć.
+            </p>
+          </article>
+        </section>
+      </div>
+
+      <section>
+        <footer>
+          Strona domowa Magdy Konopka, powstała w celach dydaktycznych.
+        </footer>
+        <script src="main.js"></script>
+      </section>
+    </main>
   </body>
 </html>
