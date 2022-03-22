@@ -1,4 +1,4 @@
-![cover](./gh/cover.png)
+![cover](./gh/magda.jpg)
 
 #HOMPAGE MAGDY!
 
