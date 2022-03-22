@@ -1,14 +1,14 @@
 ![cover](https://cotenfrontend.pl/img/cover.png)
 
-# WTF Webpack Starter Kit 
+#HOMPAGE MAGDY!
 
-Simple toolkit for your static websites development.
+Moja strona domowa. 
 
-## How to use it?
+##JAK TO ODPALIĆ?
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+Najpierw zrób "npm install", a następnie wykonaj następujące kroki:
 
-## Available scripts
+
 
 `npm run start` - runs development mode
 
